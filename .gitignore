@@ -28,3 +28,6 @@
 
 # Ignore Redis dump
 dump.rdb
+
+# Ignore deploy rb
+/config/deploy/production.rb
