@@ -24,7 +24,7 @@ lock '3.6.1'
 #############################################
 
 # Change these
-server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
+server '"91.218.111.6', user: "root", primary: true
 
 set :repo_url,        'git@github.com:Metloff/check_bot.git'
 set :application,     'pay_bot'
