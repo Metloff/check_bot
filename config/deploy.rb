@@ -24,7 +24,10 @@ lock '3.6.1'
 #############################################
 
 # Change these
-server '"91.218.111.6', user: "root", primary: true
+server '91.218.111.6', user: 'root', roles: [:web, :app, :db], primary: true
+# server "91.218.111.6", user: "root", primary: true
+# server "91.218.111.6", user: "root"
+
 
 set :repo_url,        'git@github.com:Metloff/check_bot.git'
 set :application,     'pay_bot'
@@ -56,7 +59,7 @@ set :format,        :pretty
 set :keep_releases, 5
 
 ## Linked Files & Directories (Default None):
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 # set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :puma do
