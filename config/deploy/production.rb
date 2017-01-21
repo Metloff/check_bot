@@ -10,7 +10,7 @@
 # set :repo_url, 'git@github.com:Metloff/check_bot.git'
 # set :scm, :git
 # set :user, 'root'
-# set :rails_env, 'production'
+set :rails_env, 'production'
 # # Директория для деплоя
 # set :deploy_to, '/root/pay_bot'
 # server "91.218.111.6", user: "root"
